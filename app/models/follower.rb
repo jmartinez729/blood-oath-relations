@@ -21,8 +21,12 @@ class Follower
     end
   end #Bloodoath
 
-  def join_cult(cult, initiation_date) #takes in argument of Cult instance and adds this follower to the cult's list of followers
-    Bloodoath.new(self, cult, initiation_date)
+  def join_cult(cult) #takes in argument of Cult instance and adds this follower to the cult's list of followers
+    if self.age < cult.min_age
+      "NOO!"
+    else
+      Bloodoath.new(self, cult)
+    end
   end
 
   def self.of_a_certain_age(age)#age from follower
@@ -49,6 +53,17 @@ class Follower
     sorted_followers[-10..-1]
   end
 
+  def fellow_cult_members
+    friends = []
+    self.my_cults.each { |cult| friends_from_cult(cult, friends) }
+    friends.uniq
+  end
+
+  def friends_from_cult(cult, friend_array)
+    cult.followers.each do |follower|
+      friend_array << follower unless follower == self
+    end
+  end
 
 
 end #end of Follower class

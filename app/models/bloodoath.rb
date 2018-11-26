@@ -3,10 +3,10 @@ class Bloodoath
 
   @@all = []
 
-  def initialize(follower, cult, initiation_date)
+  def initialize(follower, cult)
     @follower = follower
     @cult = cult
-    @initiation_date = initiation_date
+    @initiation_date = Time.now
 
     @@all << self
   end
