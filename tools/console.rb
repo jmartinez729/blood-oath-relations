@@ -16,15 +16,36 @@ c2 = Cult.new("cult of khorne", "plane of blood", 2012, "blood for the blood god
 c3 = Cult.new("cult of cthulhu", "new york", 600000, "blub blub")
 
 
+
 # name, age, life_motto
 f1 = Follower.new("Tony", 29, "I don't know")
 f2 = Follower.new("John", 31, "Kill me please")
 f3 = Follower.new("Isaac", 85, "I gotta do a thing")
+f4 = Follower.new("4", 85, "I gotta do a thing")
+f5 = Follower.new("5", 85, "I gotta do a thing")
+f6 = Follower.new("6", 85, "I gotta do a thing")
+f7 = Follower.new("7", 85, "I gotta do a thing")
+f8 = Follower.new("8", 85, "I gotta do a thing")
+f9 = Follower.new("9", 85, "I gotta do a thing")
+f10 = Follower.new("10", 85, "I gotta do a thing")
+f11 = Follower.new("11", 85, "I gotta do a thing")
+
 
 # follower, cult, initiation_date
 b1 = Bloodoath.new(f1, c1, 20180730)
 b2 = Bloodoath.new(f2, c2, 20180917)
-b3 = Bloodoath.new(f1, c2, 20180731)
+b3 = Bloodoath.new(f3, c2, 20180731)
+b4 = Bloodoath.new(f4, c2, 20180731)
+b5 = Bloodoath.new(f5, c2, 20180731)
+b6 = Bloodoath.new(f6, c2, 20180731)
+b7 = Bloodoath.new(f7, c2, 20180731)
+b8 = Bloodoath.new(f8, c2, 20180731)
+b9 = Bloodoath.new(f9, c2, 20180731)
+b10 = Bloodoath.new(f10, c2, 20180731)
+b11 = Bloodoath.new(f10, c2, 20180731)
+b12 = Bloodoath.new(f10, c2, 20180731)
+
+
 
 
 
